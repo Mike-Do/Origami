@@ -510,7 +510,7 @@ def root_settings(request):
                 app_ip=body["app_ip"],
                 port=body["port"])
             app = SocialApp.objects.create(
-                provider= 'github',
+                provider='github',
                 name=str(datetime.datetime.now().isoformat()),
                 client_id=body["client_id"],
                 secret=body["client_secret"])
